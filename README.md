@@ -141,15 +141,20 @@ The application implements a **unidirectional data flow** from ingestion to visu
 ```
 gemscap-quant-dashboard/
 │
-├── app.py                # Streamlit frontend
-├── ingestion.py          # WebSocket ingestion
-├── analytics.py          # Quantitative analytics
-├── storage.py            # SQLite storage
-├── requirements.txt
+├── ScreenShots/
+│   ├── adf.png
+│   ├── z_score_calculation.png
+│   ├── analytics.png
+│   ├── correlation.png
+│   ├── download_csv_file.png
+│   └── live_price_data_table.png
+│
+├── app.py
+├── analytics.py
+├── ingestion.py
+├── storage.py
 ├── README.md
-├── architecture.svg      # Architecture diagram
-└── architecture.png      # Architecture diagram (PNG)
-```
+
 
 ---
 
@@ -216,3 +221,41 @@ This project demonstrates the ability to:
 - Communicate design decisions clearly
 
 The implementation focuses on business usefulness and analytical reasoning, aligning with the expectations of a quantitative trading and research environment.
+
+---
+
+## 📸 Application Screenshots
+
+### 🔹 Live Price Data (Table View)
+Shows real-time resampled price data in tabular form.
+
+![Live Price Data Table](ScreenShots/live_price_data_table.png)
+
+---
+
+### 🔹 Analytics Dashboard
+Displays spread, hedge ratio, and Z-score calculations.
+
+![Analytics Dashboard](ScreenShots/analytics.png)
+
+---
+
+
+### 🔹 Rolling Correlation
+Rolling correlation between selected instruments.
+
+![Rolling Correlation](ScreenShots/correlation.png)
+
+---
+
+### 🔹 ADF Test on Spread
+ADF test results indicating stationarity of the spread.
+
+![ADF Test](ScreenShots/adf.png)
+
+---
+
+### 🔹 CSV Data Export
+Download functionality for resampled OHLC and analytics data.
+
+![CSV Export](ScreenShots/download_csv_file.png)
